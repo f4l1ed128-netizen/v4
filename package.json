@@ -1,0 +1,19 @@
+{
+  "name": "tempvoice-room-manager",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Arabic TempVoice bot: single dashboard, empty room cleanup, aligned custom icons.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/rooms.js && node --check src/interactions.js && node --check src/ui.js && node --check src/commands.js && node --check src/store.js && node --check src/utils.js && node --check src/housekeeping.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.2.3"
+  }
+}
