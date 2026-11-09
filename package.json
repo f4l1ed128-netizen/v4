@@ -1,0 +1,21 @@
+{
+  "name": "mg3-creator-live-alerts-fresh",
+  "version": "1.0.1",
+  "private": true,
+  "type": "module",
+  "description": "New, clean MG3 Discord creator alerts bot for Bot-Hosting with YouTube Twitch Kick and TikTok",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/platforms.js && node --check src/commands.js && node --check src/monitor.js && node --check src/template.js && node --check src/store.js && node --check src/uploads.js && node --check src/events.js && node --check src/tiktok-apify.js && node --check src/twitch-ws.js && node --check scripts/twitch-device-auth.js",
+    "test": "node --test",
+    "twitch:auth": "node scripts/twitch-device-auth.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.0",
+    "dotenv": "^16.6.1",
+    "tiktok-live-connector": "^2.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+MG3 Creator Live Alerts - NEW BOT / COMPLETE ZIP
+
+1. Create a Discord application and bot at https://discord.com/developers/applications
+2. Invite bot using bot + applications.commands scopes (View Channels, Send Messages, Embed Links permissions).
+3. Extract all ZIP contents DIRECTLY into the ROOT of a NEW Bot-Hosting server.
+4. Set Node.js 24, then install dependencies with: npm install
+5. Set startup file: src/index.js  (or run npm start)
+6. Add DISCORD_TOKEN and GUILD_ID to private Startup / Environment Variables.
+7. Platform credentials (optional until using that platform):
+   YOUTUBE_API_KEY
+   TWITCH_CLIENT_ID + TWITCH_CLIENT_SECRET
+   KICK_CLIENT_ID + KICK_CLIENT_SECRET
+   APIFY_TOKEN (optional TikTok public-post scraper; may cost money)
+   TIKTOK_SIGN_API_KEY (optional, only if TikTok LIVE checks get rate limited)
+   Add YouTube creators with an @handle or /channel/UC... link.
+8. Start bot. Discord: /alerts add  /alerts list  /alerts status  /alerts check
+9. At first add, baseline existing content; only new stream / newest new video alerts after that.
+10. Never upload a filled .env, token, or data/twitch-oauth.json to GitHub.
+
+Fresh bot: no old subscriptions, pings, settings or history bundled.
+For near-real-time Twitch, see README.md Twitch auth section.
+YouTube/Kick push webhook delivery needs a real HTTPS callback; without it the bot polls.
+TikTok public feed is not guaranteed for audience-controlled/restricted creators.
